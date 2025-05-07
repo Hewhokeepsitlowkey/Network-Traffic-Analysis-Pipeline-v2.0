@@ -1,0 +1,1430 @@
+2025-05-07 16:18:11,155 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv
+2025-05-07 16:18:12,357 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv
+2025-05-07 16:18:13,824 - INFO - Network _Anomaly _Detection _System - Removed 405 rows with missing values
+2025-05-07 16:18:13,961 - INFO - Network _Anomaly _Detection _System - Training Random Forest
+2025-05-07 16:25:55,729 - INFO - Network _Anomaly _Detection _System - 
+RANDOM_FOREST Validation:
+2025-05-07 16:25:55,730 - INFO - Network _Anomaly _Detection _System - Accuracy: 0.9997 (MET)
+2025-05-07 16:25:55,730 - INFO - Network _Anomaly _Detection _System - Precision: 0.9999 (MET)
+2025-05-07 16:25:55,732 - INFO - Network _Anomaly _Detection _System - Recall: 0.9996 (MET)
+2025-05-07 16:25:55,733 - INFO - Network _Anomaly _Detection _System - Training Logistic Regression
+2025-05-07 16:26:15,455 - INFO - Network _Anomaly _Detection _System - Optimal threshold for logistic_regression: 0.74
+2025-05-07 16:26:15,472 - INFO - Network _Anomaly _Detection _System - 
+LOGISTIC_REGRESSION Validation:
+2025-05-07 16:26:15,472 - INFO - Network _Anomaly _Detection _System - Accuracy: 0.8746 (MET)
+2025-05-07 16:26:15,472 - INFO - Network _Anomaly _Detection _System - Precision: 0.9285 (MET)
+2025-05-07 16:26:15,472 - INFO - Network _Anomaly _Detection _System - Recall: 0.8410 (MET)
+2025-05-07 16:26:15,546 - INFO - Network _Anomaly _Detection _System - Models saved to anomaly_detector.joblib
+2025-05-07 16:26:28,534 - INFO - dash - Dash is running on http://127.0.0.1:8050/
+
+2025-05-07 16:26:28,548 - INFO - _internal - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8050
+2025-05-07 16:26:28,549 - INFO - _internal - [33mPress CTRL+C to quit[0m
+2025-05-07 16:26:52,336 - INFO - _internal - 127.0.0.1 - - [07/May/2025 16:26:52] "GET / HTTP/1.1" 200 -
+2025-05-07 16:26:52,405 - INFO - _internal - 127.0.0.1 - - [07/May/2025 16:26:52] "GET /_dash-component-suites/dash/deps/react@18.v3_0_4m1746598577.3.1.min.js HTTP/1.1" 200 -
+2025-05-07 16:26:52,406 - INFO - _internal - 127.0.0.1 - - [07/May/2025 16:26:52] "GET /_dash-component-suites/dash/deps/prop-types@15.v3_0_4m1746598577.8.1.min.js HTTP/1.1" 200 -
+2025-05-07 16:26:52,416 - INFO - _internal - 127.0.0.1 - - [07/May/2025 16:26:52] "GET /_dash-component-suites/dash/deps/polyfill@7.v3_0_4m1746598577.12.1.min.js HTTP/1.1" 200 -
+2025-05-07 16:26:52,450 - INFO - _internal - 127.0.0.1 - - [07/May/2025 16:26:52] "GET /_dash-component-suites/dash/deps/react-dom@18.v3_0_4m1746598577.3.1.min.js HTTP/1.1" 200 -
+2025-05-07 16:26:52,474 - INFO - _internal - 127.0.0.1 - - [07/May/2025 16:26:52] "GET /_dash-component-suites/dash/dcc/dash_core_components-shared.v3_0_6m1746598577.js HTTP/1.1" 200 -
+2025-05-07 16:26:52,493 - INFO - _internal - 127.0.0.1 - - [07/May/2025 16:26:52] "GET /_dash-component-suites/dash/dash_table/bundle.v6_0_2m1746598576.js HTTP/1.1" 200 -
+2025-05-07 16:26:52,551 - INFO - _internal - 127.0.0.1 - - [07/May/2025 16:26:52] "GET /_dash-component-suites/dash/dash-renderer/build/dash_renderer.v3_0_4m1746598576.min.js HTTP/1.1" 200 -
+2025-05-07 16:26:52,569 - INFO - _internal - 127.0.0.1 - - [07/May/2025 16:26:52] "GET /_dash-component-suites/dash/html/dash_html_components.v3_0_2m1746598577.min.js HTTP/1.1" 200 -
+2025-05-07 16:26:52,606 - INFO - _internal - 127.0.0.1 - - [07/May/2025 16:26:52] "GET /_dash-component-suites/dash/dcc/dash_core_components.v3_0_6m1746598577.js HTTP/1.1" 200 -
+2025-05-07 16:26:52,667 - INFO - _internal - 127.0.0.1 - - [07/May/2025 16:26:52] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-05-07 16:26:52,671 - INFO - _internal - 127.0.0.1 - - [07/May/2025 16:26:52] "GET /_dash-layout HTTP/1.1" 200 -
+2025-05-07 16:26:52,927 - INFO - _internal - 127.0.0.1 - - [07/May/2025 16:26:52] "GET /_favicon.ico?v=3.0.4 HTTP/1.1" 200 -
+2025-05-07 16:26:52,945 - INFO - _internal - 127.0.0.1 - - [07/May/2025 16:26:52] "GET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1" 200 -
+2025-05-07 16:26:54,915 - INFO - _internal - 127.0.0.1 - - [07/May/2025 16:26:54] "GET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1" 200 -
+2025-05-07 16:40:30,738 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv
+2025-05-07 16:40:31,895 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv
+2025-05-07 16:40:33,367 - INFO - Network _Anomaly _Detection _System - Removed 405 rows with missing values
+2025-05-07 16:40:33,506 - INFO - Network _Anomaly _Detection _System - Training Random Forest
+2025-05-07 16:48:24,614 - INFO - Network _Anomaly _Detection _System - 
+RANDOM_FOREST Validation:
+2025-05-07 16:48:24,614 - INFO - Network _Anomaly _Detection _System - Accuracy: 0.9997 (MET)
+2025-05-07 16:48:24,615 - INFO - Network _Anomaly _Detection _System - Precision: 0.9999 (MET)
+2025-05-07 16:48:24,615 - INFO - Network _Anomaly _Detection _System - Recall: 0.9996 (MET)
+2025-05-07 16:48:24,615 - INFO - Network _Anomaly _Detection _System - Training Logistic Regression
+2025-05-07 16:48:44,243 - INFO - Network _Anomaly _Detection _System - Optimal threshold for logistic_regression: 0.74
+2025-05-07 16:48:44,259 - INFO - Network _Anomaly _Detection _System - 
+LOGISTIC_REGRESSION Validation:
+2025-05-07 16:48:44,259 - INFO - Network _Anomaly _Detection _System - Accuracy: 0.8746 (MET)
+2025-05-07 16:48:44,259 - INFO - Network _Anomaly _Detection _System - Precision: 0.9285 (MET)
+2025-05-07 16:48:44,260 - INFO - Network _Anomaly _Detection _System - Recall: 0.8410 (MET)
+2025-05-07 16:48:44,337 - INFO - Network _Anomaly _Detection _System - Models saved to anomaly_detector.joblib
+2025-05-07 16:50:31,695 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv
+2025-05-07 16:50:33,028 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv
+2025-05-07 16:50:34,565 - INFO - Network _Anomaly _Detection _System - Removed 405 rows with missing values
+2025-05-07 16:50:34,713 - INFO - Network _Anomaly _Detection _System - Training Random Forest
+2025-05-07 16:52:32,456 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv
+2025-05-07 16:52:33,649 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv
+2025-05-07 16:52:35,118 - INFO - Network _Anomaly _Detection _System - Removed 405 rows with missing values
+2025-05-07 16:52:35,252 - INFO - Network _Anomaly _Detection _System - Training Random Forest
+2025-05-07 17:00:24,129 - INFO - Network _Anomaly _Detection _System - 
+RANDOM_FOREST Validation:
+2025-05-07 17:00:24,130 - INFO - Network _Anomaly _Detection _System - Accuracy: 0.9997 (MET)
+2025-05-07 17:00:24,130 - INFO - Network _Anomaly _Detection _System - Precision: 0.9999 (MET)
+2025-05-07 17:00:24,130 - INFO - Network _Anomaly _Detection _System - Recall: 0.9996 (MET)
+2025-05-07 17:00:24,130 - INFO - Network _Anomaly _Detection _System - Training Logistic Regression
+2025-05-07 17:00:42,857 - INFO - Network _Anomaly _Detection _System - Optimal threshold for logistic_regression: 0.74
+2025-05-07 17:00:42,874 - INFO - Network _Anomaly _Detection _System - 
+LOGISTIC_REGRESSION Validation:
+2025-05-07 17:00:42,874 - INFO - Network _Anomaly _Detection _System - Accuracy: 0.8746 (MET)
+2025-05-07 17:00:42,875 - INFO - Network _Anomaly _Detection _System - Precision: 0.9285 (MET)
+2025-05-07 17:00:42,875 - INFO - Network _Anomaly _Detection _System - Recall: 0.8410 (MET)
+2025-05-07 17:00:42,947 - INFO - Network _Anomaly _Detection _System - Models saved to anomaly_detector.joblib
+2025-05-07 17:01:44,324 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv
+2025-05-07 17:01:45,567 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv
+2025-05-07 17:01:47,069 - INFO - Network _Anomaly _Detection _System - Removed 405 rows with missing values
+2025-05-07 17:01:47,216 - INFO - Network _Anomaly _Detection _System - Training Random Forest
+2025-05-07 17:09:25,340 - INFO - Network _Anomaly _Detection _System - 
+RANDOM_FOREST Validation:
+2025-05-07 17:09:25,340 - INFO - Network _Anomaly _Detection _System - Accuracy: 0.9997 (MET)
+2025-05-07 17:09:25,340 - INFO - Network _Anomaly _Detection _System - Precision: 0.9999 (MET)
+2025-05-07 17:09:25,341 - INFO - Network _Anomaly _Detection _System - Recall: 0.9996 (MET)
+2025-05-07 17:09:25,341 - INFO - Network _Anomaly _Detection _System - Training Logistic Regression
+2025-05-07 17:09:44,438 - INFO - Network _Anomaly _Detection _System - Optimal threshold for logistic_regression: 0.74
+2025-05-07 17:09:44,455 - INFO - Network _Anomaly _Detection _System - 
+LOGISTIC_REGRESSION Validation:
+2025-05-07 17:09:44,455 - INFO - Network _Anomaly _Detection _System - Accuracy: 0.8746 (MET)
+2025-05-07 17:09:44,455 - INFO - Network _Anomaly _Detection _System - Precision: 0.9285 (MET)
+2025-05-07 17:09:44,455 - INFO - Network _Anomaly _Detection _System - Recall: 0.8410 (MET)
+2025-05-07 17:09:44,536 - INFO - Network _Anomaly _Detection _System - Models saved to anomaly_detector.joblib
+2025-05-07 17:09:46,308 - INFO - dash - Dash is running on http://0.0.0.0:8050/
+
+2025-05-07 17:09:46,319 - INFO - _internal - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8050
+ * Running on http://192.168.20.12:8050
+2025-05-07 17:09:46,319 - INFO - _internal - [33mPress CTRL+C to quit[0m
+2025-05-07 17:10:15,338 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:10:15] "GET / HTTP/1.1" 200 -
+2025-05-07 17:10:15,408 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:10:15] "GET /_dash-component-suites/dash/deps/polyfill@7.v3_0_4m1746598577.12.1.min.js HTTP/1.1" 200 -
+2025-05-07 17:10:15,419 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:10:15] "GET /_dash-component-suites/dash/deps/react@18.v3_0_4m1746598577.3.1.min.js HTTP/1.1" 200 -
+2025-05-07 17:10:15,419 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:10:15] "GET /_dash-component-suites/dash/deps/react-dom@18.v3_0_4m1746598577.3.1.min.js HTTP/1.1" 200 -
+2025-05-07 17:10:15,420 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:10:15] "GET /_dash-component-suites/dash/deps/prop-types@15.v3_0_4m1746598577.8.1.min.js HTTP/1.1" 200 -
+2025-05-07 17:10:15,424 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:10:15] "GET /_dash-component-suites/dash/dash-renderer/build/dash_renderer.v3_0_4m1746598576.min.js HTTP/1.1" 200 -
+2025-05-07 17:10:15,427 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:10:15] "GET /_dash-component-suites/dash/dcc/dash_core_components.v3_0_6m1746598577.js HTTP/1.1" 200 -
+2025-05-07 17:10:15,430 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:10:15] "GET /_dash-component-suites/dash/dcc/dash_core_components-shared.v3_0_6m1746598577.js HTTP/1.1" 200 -
+2025-05-07 17:10:15,432 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:10:15] "GET /_dash-component-suites/dash/html/dash_html_components.v3_0_2m1746598577.min.js HTTP/1.1" 200 -
+2025-05-07 17:10:15,436 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:10:15] "GET /_dash-component-suites/dash/dash_table/bundle.v6_0_2m1746598576.js HTTP/1.1" 200 -
+2025-05-07 17:10:15,596 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:10:15] "GET /_dash-component-suites/dash_bootstrap_components/_components/dash_bootstrap_components.v2_0_2m1746599412.min.js HTTP/1.1" 200 -
+2025-05-07 17:10:15,881 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:10:15] "GET /_dash-layout HTTP/1.1" 200 -
+2025-05-07 17:10:15,881 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:10:15] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-05-07 17:10:16,128 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:10:16] "GET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1" 200 -
+2025-05-07 17:10:16,133 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:10:16] "GET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1" 200 -
+2025-05-07 17:10:16,160 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:10:16] "GET /_favicon.ico?v=3.0.4 HTTP/1.1" 200 -
+2025-05-07 17:10:16,220 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:10:16] "GET /_dash-component-suites/dash/dcc/async-dropdown.js HTTP/1.1" 200 -
+2025-05-07 17:10:17,942 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:10:17] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-05-07 17:10:26,977 - ERROR - app - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\dash\dash.py", line 1414, in dispatch
+    ctx.run(
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\dash\_callback.py", line 536, in add_context
+    raise err
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\dash\_callback.py", line 525, in add_context
+    output_value = _invoke_callback(func, *func_args, **func_kwargs)  # type: ignore[reportArgumentType]
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\dash\_callback.py", line 47, in _invoke_callback
+    return func(*args, **kwargs)  # %% callback invoked %%
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\Network _Anomaly _Detection _System.py", line 236, in update_visuals
+    def update_visuals(selected_model):
+                                        
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\Network _Anomaly _Detection _System.py", line 136, in get_shap_fig
+    processed_data = preprocessor.transform(X_sample)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\shap\explainers\_tree.py", line 278, in __init__
+    self.model = TreeEnsemble(model, self.data, self.data_missing, model_output)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\shap\explainers\_tree.py", line 1436, in __init__
+    raise InvalidModelError("Model type not yet supported by TreeExplainer: " + str(type(model)))
+shap.utils._exceptions.InvalidModelError: Model type not yet supported by TreeExplainer: <class 'sklearn.linear_model._logistic.LogisticRegression'>
+2025-05-07 17:10:27,007 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:10:27] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+2025-05-07 17:10:30,636 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:10:30] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-05-07 17:10:30,672 - ERROR - app - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\dash\dash.py", line 1414, in dispatch
+    ctx.run(
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\dash\_callback.py", line 536, in add_context
+    raise err
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\dash\_callback.py", line 525, in add_context
+    output_value = _invoke_callback(func, *func_args, **func_kwargs)  # type: ignore[reportArgumentType]
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\dash\_callback.py", line 47, in _invoke_callback
+    return func(*args, **kwargs)  # %% callback invoked %%
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\Network _Anomaly _Detection _System.py", line 236, in update_visuals
+    def update_visuals(selected_model):
+                                        
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\Network _Anomaly _Detection _System.py", line 136, in get_shap_fig
+    processed_data = preprocessor.transform(X_sample)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\shap\explainers\_tree.py", line 278, in __init__
+    self.model = TreeEnsemble(model, self.data, self.data_missing, model_output)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\shap\explainers\_tree.py", line 1436, in __init__
+    raise InvalidModelError("Model type not yet supported by TreeExplainer: " + str(type(model)))
+shap.utils._exceptions.InvalidModelError: Model type not yet supported by TreeExplainer: <class 'sklearn.linear_model._logistic.LogisticRegression'>
+2025-05-07 17:10:30,675 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:10:30] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+2025-05-07 17:10:44,777 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:10:44] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-05-07 17:11:15,926 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:11:15] "GET / HTTP/1.1" 200 -
+2025-05-07 17:11:16,102 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:11:16] "GET /_dash-layout HTTP/1.1" 200 -
+2025-05-07 17:11:16,102 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:11:16] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-05-07 17:11:16,375 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:11:16] "[36mGET /_dash-component-suites/dash/dcc/async-dropdown.js HTTP/1.1[0m" 304 -
+2025-05-07 17:11:16,375 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:11:16] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+2025-05-07 17:11:16,381 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:11:16] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+2025-05-07 17:11:18,015 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:11:18] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-05-07 17:11:25,991 - ERROR - app - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\dash\dash.py", line 1414, in dispatch
+    ctx.run(
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\dash\_callback.py", line 536, in add_context
+    raise err
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\dash\_callback.py", line 525, in add_context
+    output_value = _invoke_callback(func, *func_args, **func_kwargs)  # type: ignore[reportArgumentType]
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\dash\_callback.py", line 47, in _invoke_callback
+    return func(*args, **kwargs)  # %% callback invoked %%
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\Network _Anomaly _Detection _System.py", line 236, in update_visuals
+    def update_visuals(selected_model):
+                                        
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\Network _Anomaly _Detection _System.py", line 136, in get_shap_fig
+    processed_data = preprocessor.transform(X_sample)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\shap\explainers\_tree.py", line 278, in __init__
+    self.model = TreeEnsemble(model, self.data, self.data_missing, model_output)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\shap\explainers\_tree.py", line 1436, in __init__
+    raise InvalidModelError("Model type not yet supported by TreeExplainer: " + str(type(model)))
+shap.utils._exceptions.InvalidModelError: Model type not yet supported by TreeExplainer: <class 'sklearn.linear_model._logistic.LogisticRegression'>
+2025-05-07 17:11:25,993 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:11:25] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+2025-05-07 17:23:17,212 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv
+2025-05-07 17:23:18,467 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv
+2025-05-07 17:23:20,019 - INFO - Network _Anomaly _Detection _System - Removed 405 rows with missing values
+2025-05-07 17:23:20,162 - INFO - Network _Anomaly _Detection _System - Training Random Forest
+2025-05-07 17:23:24,836 - ERROR - Network _Anomaly _Detection _System - Fatal error during execution: 
+All the 20 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+20 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 518, in fit
+    Xt, yt = self._fit(X, y, routed_params, raw_params=params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 440, in _fit
+    X, y, fitted_transformer = fit_resample_one_cached(
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\joblib\memory.py", line 326, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 1336, in _fit_resample_one
+    X_res, y_res = sampler.fit_resample(X, y, **params.get("fit_resample", {}))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\base.py", line 202, in fit_resample
+    return super().fit_resample(X, y, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\base.py", line 101, in fit_resample
+    self.sampling_strategy_ = check_sampling_strategy(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\utils\_validation.py", line 571, in check_sampling_strategy
+    _sampling_strategy_float(sampling_strategy, y, sampling_type).items()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\utils\_validation.py", line 410, in _sampling_strategy_float
+    raise ValueError(
+ValueError: The specified ratio required to remove samples from the minority class while trying to generate new samples. Please increase the ratio.
+Traceback (most recent call last):
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\Network _Anomaly _Detection _System.py", line 389, in <module>
+    detector.train()
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\Network _Anomaly _Detection _System.py", line 375, in train
+    ).fit(X_train, y_train).best_estimator_
+      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1024, in fit
+    self._run_search(evaluate_candidates)
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1571, in _run_search
+    evaluate_candidates(ParameterGrid(self.param_grid))
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1001, in evaluate_candidates
+    _warn_or_raise_about_fit_failures(out, self.error_score)
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 517, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 20 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+20 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 518, in fit
+    Xt, yt = self._fit(X, y, routed_params, raw_params=params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 440, in _fit
+    X, y, fitted_transformer = fit_resample_one_cached(
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\joblib\memory.py", line 326, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 1336, in _fit_resample_one
+    X_res, y_res = sampler.fit_resample(X, y, **params.get("fit_resample", {}))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\base.py", line 202, in fit_resample
+    return super().fit_resample(X, y, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\base.py", line 101, in fit_resample
+    self.sampling_strategy_ = check_sampling_strategy(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\utils\_validation.py", line 571, in check_sampling_strategy
+    _sampling_strategy_float(sampling_strategy, y, sampling_type).items()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\utils\_validation.py", line 410, in _sampling_strategy_float
+    raise ValueError(
+ValueError: The specified ratio required to remove samples from the minority class while trying to generate new samples. Please increase the ratio.
+
+2025-05-07 17:23:39,035 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv
+2025-05-07 17:23:40,234 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv
+2025-05-07 17:23:41,734 - INFO - Network _Anomaly _Detection _System - Removed 405 rows with missing values
+2025-05-07 17:23:41,877 - INFO - Network _Anomaly _Detection _System - Training Random Forest
+2025-05-07 17:23:46,173 - ERROR - Network _Anomaly _Detection _System - Fatal error during execution: 
+All the 20 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+20 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 518, in fit
+    Xt, yt = self._fit(X, y, routed_params, raw_params=params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 440, in _fit
+    X, y, fitted_transformer = fit_resample_one_cached(
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\joblib\memory.py", line 326, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 1336, in _fit_resample_one
+    X_res, y_res = sampler.fit_resample(X, y, **params.get("fit_resample", {}))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\base.py", line 202, in fit_resample
+    return super().fit_resample(X, y, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\base.py", line 101, in fit_resample
+    self.sampling_strategy_ = check_sampling_strategy(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\utils\_validation.py", line 571, in check_sampling_strategy
+    _sampling_strategy_float(sampling_strategy, y, sampling_type).items()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\utils\_validation.py", line 410, in _sampling_strategy_float
+    raise ValueError(
+ValueError: The specified ratio required to remove samples from the minority class while trying to generate new samples. Please increase the ratio.
+Traceback (most recent call last):
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\Network _Anomaly _Detection _System.py", line 394, in <module>
+    detector.train()
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\Network _Anomaly _Detection _System.py", line 380, in train
+    ).fit(X_train, y_train).best_estimator_
+      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1024, in fit
+    self._run_search(evaluate_candidates)
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1571, in _run_search
+    evaluate_candidates(ParameterGrid(self.param_grid))
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1001, in evaluate_candidates
+    _warn_or_raise_about_fit_failures(out, self.error_score)
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 517, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 20 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+20 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 518, in fit
+    Xt, yt = self._fit(X, y, routed_params, raw_params=params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 440, in _fit
+    X, y, fitted_transformer = fit_resample_one_cached(
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\joblib\memory.py", line 326, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 1336, in _fit_resample_one
+    X_res, y_res = sampler.fit_resample(X, y, **params.get("fit_resample", {}))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\base.py", line 202, in fit_resample
+    return super().fit_resample(X, y, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\base.py", line 101, in fit_resample
+    self.sampling_strategy_ = check_sampling_strategy(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\utils\_validation.py", line 571, in check_sampling_strategy
+    _sampling_strategy_float(sampling_strategy, y, sampling_type).items()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\utils\_validation.py", line 410, in _sampling_strategy_float
+    raise ValueError(
+ValueError: The specified ratio required to remove samples from the minority class while trying to generate new samples. Please increase the ratio.
+
+2025-05-07 17:25:25,823 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv
+2025-05-07 17:25:27,106 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv
+2025-05-07 17:25:28,529 - INFO - Network _Anomaly _Detection _System - Removed 405 rows with missing values
+2025-05-07 17:25:28,675 - INFO - Network _Anomaly _Detection _System - Training Random Forest
+2025-05-07 17:25:32,886 - ERROR - Network _Anomaly _Detection _System - Fatal error during execution: 
+All the 20 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+20 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 518, in fit
+    Xt, yt = self._fit(X, y, routed_params, raw_params=params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 440, in _fit
+    X, y, fitted_transformer = fit_resample_one_cached(
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\joblib\memory.py", line 326, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 1336, in _fit_resample_one
+    X_res, y_res = sampler.fit_resample(X, y, **params.get("fit_resample", {}))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\base.py", line 202, in fit_resample
+    return super().fit_resample(X, y, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\base.py", line 101, in fit_resample
+    self.sampling_strategy_ = check_sampling_strategy(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\utils\_validation.py", line 571, in check_sampling_strategy
+    _sampling_strategy_float(sampling_strategy, y, sampling_type).items()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\utils\_validation.py", line 410, in _sampling_strategy_float
+    raise ValueError(
+ValueError: The specified ratio required to remove samples from the minority class while trying to generate new samples. Please increase the ratio.
+Traceback (most recent call last):
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\Network _Anomaly _Detection _System.py", line 394, in <module>
+    detector.train()
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\Network _Anomaly _Detection _System.py", line 380, in train
+    ).fit(X_train, y_train).best_estimator_
+      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1024, in fit
+    self._run_search(evaluate_candidates)
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1571, in _run_search
+    evaluate_candidates(ParameterGrid(self.param_grid))
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1001, in evaluate_candidates
+    _warn_or_raise_about_fit_failures(out, self.error_score)
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 517, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 20 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+20 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 518, in fit
+    Xt, yt = self._fit(X, y, routed_params, raw_params=params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 440, in _fit
+    X, y, fitted_transformer = fit_resample_one_cached(
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\joblib\memory.py", line 326, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 1336, in _fit_resample_one
+    X_res, y_res = sampler.fit_resample(X, y, **params.get("fit_resample", {}))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\base.py", line 202, in fit_resample
+    return super().fit_resample(X, y, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\base.py", line 101, in fit_resample
+    self.sampling_strategy_ = check_sampling_strategy(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\utils\_validation.py", line 571, in check_sampling_strategy
+    _sampling_strategy_float(sampling_strategy, y, sampling_type).items()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\utils\_validation.py", line 410, in _sampling_strategy_float
+    raise ValueError(
+ValueError: The specified ratio required to remove samples from the minority class while trying to generate new samples. Please increase the ratio.
+
+2025-05-07 17:26:02,974 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv
+2025-05-07 17:26:04,300 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv
+2025-05-07 17:26:05,759 - INFO - Network _Anomaly _Detection _System - Removed 405 rows with missing values
+2025-05-07 17:26:05,895 - INFO - Network _Anomaly _Detection _System - Training Random Forest
+2025-05-07 17:26:10,083 - ERROR - Network _Anomaly _Detection _System - Fatal error during execution: 
+All the 20 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+20 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 518, in fit
+    Xt, yt = self._fit(X, y, routed_params, raw_params=params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 440, in _fit
+    X, y, fitted_transformer = fit_resample_one_cached(
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\joblib\memory.py", line 326, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 1336, in _fit_resample_one
+    X_res, y_res = sampler.fit_resample(X, y, **params.get("fit_resample", {}))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\base.py", line 202, in fit_resample
+    return super().fit_resample(X, y, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\base.py", line 101, in fit_resample
+    self.sampling_strategy_ = check_sampling_strategy(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\utils\_validation.py", line 571, in check_sampling_strategy
+    _sampling_strategy_float(sampling_strategy, y, sampling_type).items()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\utils\_validation.py", line 410, in _sampling_strategy_float
+    raise ValueError(
+ValueError: The specified ratio required to remove samples from the minority class while trying to generate new samples. Please increase the ratio.
+Traceback (most recent call last):
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\Network _Anomaly _Detection _System.py", line 394, in <module>
+    detector.train()
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\Network _Anomaly _Detection _System.py", line 380, in train
+    ).fit(X_train, y_train).best_estimator_
+      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1024, in fit
+    self._run_search(evaluate_candidates)
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1571, in _run_search
+    evaluate_candidates(ParameterGrid(self.param_grid))
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1001, in evaluate_candidates
+    _warn_or_raise_about_fit_failures(out, self.error_score)
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 517, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 20 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+20 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 518, in fit
+    Xt, yt = self._fit(X, y, routed_params, raw_params=params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 440, in _fit
+    X, y, fitted_transformer = fit_resample_one_cached(
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\joblib\memory.py", line 326, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 1336, in _fit_resample_one
+    X_res, y_res = sampler.fit_resample(X, y, **params.get("fit_resample", {}))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\base.py", line 202, in fit_resample
+    return super().fit_resample(X, y, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\base.py", line 101, in fit_resample
+    self.sampling_strategy_ = check_sampling_strategy(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\utils\_validation.py", line 571, in check_sampling_strategy
+    _sampling_strategy_float(sampling_strategy, y, sampling_type).items()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\utils\_validation.py", line 410, in _sampling_strategy_float
+    raise ValueError(
+ValueError: The specified ratio required to remove samples from the minority class while trying to generate new samples. Please increase the ratio.
+
+2025-05-07 17:28:27,183 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv
+2025-05-07 17:28:28,421 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv
+2025-05-07 17:28:29,846 - INFO - Network _Anomaly _Detection _System - Removed 405 rows with missing values
+2025-05-07 17:28:29,984 - INFO - Network _Anomaly _Detection _System - Training Random Forest
+2025-05-07 17:28:34,066 - ERROR - Network _Anomaly _Detection _System - Fatal error during execution: 
+All the 20 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+20 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 518, in fit
+    Xt, yt = self._fit(X, y, routed_params, raw_params=params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 440, in _fit
+    X, y, fitted_transformer = fit_resample_one_cached(
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\joblib\memory.py", line 326, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 1336, in _fit_resample_one
+    X_res, y_res = sampler.fit_resample(X, y, **params.get("fit_resample", {}))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\base.py", line 202, in fit_resample
+    return super().fit_resample(X, y, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\base.py", line 101, in fit_resample
+    self.sampling_strategy_ = check_sampling_strategy(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\utils\_validation.py", line 571, in check_sampling_strategy
+    _sampling_strategy_float(sampling_strategy, y, sampling_type).items()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\utils\_validation.py", line 410, in _sampling_strategy_float
+    raise ValueError(
+ValueError: The specified ratio required to remove samples from the minority class while trying to generate new samples. Please increase the ratio.
+Traceback (most recent call last):
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\Network _Anomaly _Detection _System.py", line 394, in <module>
+    detector.train()
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\Network _Anomaly _Detection _System.py", line 380, in train
+    ).fit(X_train, y_train).best_estimator_
+      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1024, in fit
+    self._run_search(evaluate_candidates)
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1571, in _run_search
+    evaluate_candidates(ParameterGrid(self.param_grid))
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1001, in evaluate_candidates
+    _warn_or_raise_about_fit_failures(out, self.error_score)
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 517, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 20 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+20 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 518, in fit
+    Xt, yt = self._fit(X, y, routed_params, raw_params=params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 440, in _fit
+    X, y, fitted_transformer = fit_resample_one_cached(
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\joblib\memory.py", line 326, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 1336, in _fit_resample_one
+    X_res, y_res = sampler.fit_resample(X, y, **params.get("fit_resample", {}))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\base.py", line 202, in fit_resample
+    return super().fit_resample(X, y, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\base.py", line 101, in fit_resample
+    self.sampling_strategy_ = check_sampling_strategy(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\utils\_validation.py", line 571, in check_sampling_strategy
+    _sampling_strategy_float(sampling_strategy, y, sampling_type).items()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\utils\_validation.py", line 410, in _sampling_strategy_float
+    raise ValueError(
+ValueError: The specified ratio required to remove samples from the minority class while trying to generate new samples. Please increase the ratio.
+
+2025-05-07 17:29:17,876 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv
+2025-05-07 17:29:19,065 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv
+2025-05-07 17:29:20,568 - INFO - Network _Anomaly _Detection _System - Removed 405 rows with missing values
+2025-05-07 17:29:20,707 - INFO - Network _Anomaly _Detection _System - Training Random Forest
+2025-05-07 17:29:24,844 - ERROR - Network _Anomaly _Detection _System - Fatal error during execution: 
+All the 20 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+20 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 518, in fit
+    Xt, yt = self._fit(X, y, routed_params, raw_params=params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 440, in _fit
+    X, y, fitted_transformer = fit_resample_one_cached(
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\joblib\memory.py", line 326, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 1336, in _fit_resample_one
+    X_res, y_res = sampler.fit_resample(X, y, **params.get("fit_resample", {}))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\base.py", line 202, in fit_resample
+    return super().fit_resample(X, y, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\base.py", line 101, in fit_resample
+    self.sampling_strategy_ = check_sampling_strategy(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\utils\_validation.py", line 571, in check_sampling_strategy
+    _sampling_strategy_float(sampling_strategy, y, sampling_type).items()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\utils\_validation.py", line 410, in _sampling_strategy_float
+    raise ValueError(
+ValueError: The specified ratio required to remove samples from the minority class while trying to generate new samples. Please increase the ratio.
+Traceback (most recent call last):
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\Network _Anomaly _Detection _System.py", line 398, in <module>
+    detector.train()
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\Network _Anomaly _Detection _System.py", line 384, in train
+    ).fit(X_train, y_train).best_estimator_
+      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1024, in fit
+    self._run_search(evaluate_candidates)
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1571, in _run_search
+    evaluate_candidates(ParameterGrid(self.param_grid))
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1001, in evaluate_candidates
+    _warn_or_raise_about_fit_failures(out, self.error_score)
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 517, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 20 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+20 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 518, in fit
+    Xt, yt = self._fit(X, y, routed_params, raw_params=params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 440, in _fit
+    X, y, fitted_transformer = fit_resample_one_cached(
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\joblib\memory.py", line 326, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 1336, in _fit_resample_one
+    X_res, y_res = sampler.fit_resample(X, y, **params.get("fit_resample", {}))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\base.py", line 202, in fit_resample
+    return super().fit_resample(X, y, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\base.py", line 101, in fit_resample
+    self.sampling_strategy_ = check_sampling_strategy(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\utils\_validation.py", line 571, in check_sampling_strategy
+    _sampling_strategy_float(sampling_strategy, y, sampling_type).items()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\utils\_validation.py", line 410, in _sampling_strategy_float
+    raise ValueError(
+ValueError: The specified ratio required to remove samples from the minority class while trying to generate new samples. Please increase the ratio.
+
+2025-05-07 17:29:44,395 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv
+2025-05-07 17:29:45,717 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv
+2025-05-07 17:29:47,195 - INFO - Network _Anomaly _Detection _System - Removed 405 rows with missing values
+2025-05-07 17:29:47,335 - INFO - Network _Anomaly _Detection _System - Training Random Forest
+2025-05-07 17:29:51,591 - ERROR - Network _Anomaly _Detection _System - Fatal error during execution: 
+All the 20 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+20 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 518, in fit
+    Xt, yt = self._fit(X, y, routed_params, raw_params=params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 440, in _fit
+    X, y, fitted_transformer = fit_resample_one_cached(
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\joblib\memory.py", line 326, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 1336, in _fit_resample_one
+    X_res, y_res = sampler.fit_resample(X, y, **params.get("fit_resample", {}))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\base.py", line 202, in fit_resample
+    return super().fit_resample(X, y, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\base.py", line 101, in fit_resample
+    self.sampling_strategy_ = check_sampling_strategy(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\utils\_validation.py", line 571, in check_sampling_strategy
+    _sampling_strategy_float(sampling_strategy, y, sampling_type).items()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\utils\_validation.py", line 410, in _sampling_strategy_float
+    raise ValueError(
+ValueError: The specified ratio required to remove samples from the minority class while trying to generate new samples. Please increase the ratio.
+Traceback (most recent call last):
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\Network _Anomaly _Detection _System.py", line 389, in <module>
+    detector.train()
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\Network _Anomaly _Detection _System.py", line 375, in train
+    ).fit(X_train, y_train).best_estimator_
+      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1024, in fit
+    self._run_search(evaluate_candidates)
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1571, in _run_search
+    evaluate_candidates(ParameterGrid(self.param_grid))
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1001, in evaluate_candidates
+    _warn_or_raise_about_fit_failures(out, self.error_score)
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 517, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 20 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+20 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 518, in fit
+    Xt, yt = self._fit(X, y, routed_params, raw_params=params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 440, in _fit
+    X, y, fitted_transformer = fit_resample_one_cached(
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\joblib\memory.py", line 326, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 1336, in _fit_resample_one
+    X_res, y_res = sampler.fit_resample(X, y, **params.get("fit_resample", {}))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\base.py", line 202, in fit_resample
+    return super().fit_resample(X, y, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\base.py", line 101, in fit_resample
+    self.sampling_strategy_ = check_sampling_strategy(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\utils\_validation.py", line 571, in check_sampling_strategy
+    _sampling_strategy_float(sampling_strategy, y, sampling_type).items()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\utils\_validation.py", line 410, in _sampling_strategy_float
+    raise ValueError(
+ValueError: The specified ratio required to remove samples from the minority class while trying to generate new samples. Please increase the ratio.
+
+2025-05-07 17:30:19,099 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv
+2025-05-07 17:30:20,316 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv
+2025-05-07 17:30:21,777 - INFO - Network _Anomaly _Detection _System - Removed 405 rows with missing values
+2025-05-07 17:30:21,914 - INFO - Network _Anomaly _Detection _System - Training Random Forest
+2025-05-07 17:33:48,608 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv
+2025-05-07 17:33:49,794 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv
+2025-05-07 17:33:51,339 - INFO - Network _Anomaly _Detection _System - Removed 405 rows with missing values
+2025-05-07 17:33:51,479 - INFO - Network _Anomaly _Detection _System - Training Random Forest
+2025-05-07 17:41:19,606 - INFO - Network _Anomaly _Detection _System - 
+RANDOM_FOREST Validation:
+2025-05-07 17:41:19,607 - INFO - Network _Anomaly _Detection _System - Accuracy: 0.9997 (MET)
+2025-05-07 17:41:19,607 - INFO - Network _Anomaly _Detection _System - Precision: 0.9999 (MET)
+2025-05-07 17:41:19,607 - INFO - Network _Anomaly _Detection _System - Recall: 0.9996 (MET)
+2025-05-07 17:41:19,607 - INFO - Network _Anomaly _Detection _System - Training Logistic Regression
+2025-05-07 17:41:37,773 - INFO - Network _Anomaly _Detection _System - Optimal threshold for logistic_regression: 0.74
+2025-05-07 17:41:37,788 - INFO - Network _Anomaly _Detection _System - 
+LOGISTIC_REGRESSION Validation:
+2025-05-07 17:41:37,788 - INFO - Network _Anomaly _Detection _System - Accuracy: 0.8746 (MET)
+2025-05-07 17:41:37,788 - INFO - Network _Anomaly _Detection _System - Precision: 0.9285 (MET)
+2025-05-07 17:41:37,789 - INFO - Network _Anomaly _Detection _System - Recall: 0.8410 (MET)
+2025-05-07 17:41:37,863 - INFO - Network _Anomaly _Detection _System - Models saved to anomaly_detector.joblib
+2025-05-07 17:41:39,612 - INFO - dash - Dash is running on http://0.0.0.0:8050/
+
+2025-05-07 17:41:39,623 - INFO - _internal - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8050
+ * Running on http://192.168.20.12:8050
+2025-05-07 17:41:39,623 - INFO - _internal - [33mPress CTRL+C to quit[0m
+2025-05-07 17:41:46,427 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:41:46] "GET / HTTP/1.1" 200 -
+2025-05-07 17:41:46,574 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:41:46] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-05-07 17:41:46,575 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:41:46] "GET /_dash-layout HTTP/1.1" 200 -
+2025-05-07 17:41:46,860 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:41:46] "[36mGET /_dash-component-suites/dash/dcc/async-dropdown.js HTTP/1.1[0m" 304 -
+2025-05-07 17:41:46,861 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:41:46] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+2025-05-07 17:41:46,871 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:41:46] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+2025-05-07 17:41:48,567 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:41:48] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-05-07 17:41:52,241 - ERROR - app - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\dash\dash.py", line 1414, in dispatch
+    ctx.run(
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\dash\_callback.py", line 536, in add_context
+    raise err
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\dash\_callback.py", line 525, in add_context
+    output_value = _invoke_callback(func, *func_args, **func_kwargs)  # type: ignore[reportArgumentType]
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\dash\_callback.py", line 47, in _invoke_callback
+    return func(*args, **kwargs)  # %% callback invoked %%
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\Network _Anomaly _Detection _System.py", line 237, in update_visuals
+    return get_conf_matrix_fig(selected_model), get_shap_fig(selected_model)
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\Network _Anomaly _Detection _System.py", line 137, in get_shap_fig
+    explainer = shap.TreeExplainer(pipeline.named_steps.get('randomforestclassifier', pipeline.named_steps.get('logisticregression')))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\shap\explainers\_tree.py", line 278, in __init__
+    self.model = TreeEnsemble(model, self.data, self.data_missing, model_output)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\shap\explainers\_tree.py", line 1436, in __init__
+    raise InvalidModelError("Model type not yet supported by TreeExplainer: " + str(type(model)))
+shap.utils._exceptions.InvalidModelError: Model type not yet supported by TreeExplainer: <class 'sklearn.linear_model._logistic.LogisticRegression'>
+2025-05-07 17:41:52,286 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:41:52] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+2025-05-07 17:41:55,685 - INFO - _internal - 192.168.20.12 - - [07/May/2025 17:41:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-05-07 17:49:10,247 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv
+2025-05-07 17:49:11,401 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv
+2025-05-07 17:49:12,689 - ERROR - Network _Anomaly _Detection _System - Fatal error during execution: cannot access local variable 'df' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\Network _Anomaly _Detection _System.py", line 376, in <module>
+    detector.train()
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\Network _Anomaly _Detection _System.py", line 317, in train
+    df = self._feature_engineering(df)
+                                  ^^
+UnboundLocalError: cannot access local variable 'df' where it is not associated with a value
+2025-05-07 17:50:16,741 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv
+2025-05-07 17:50:18,005 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv
+2025-05-07 17:50:19,741 - INFO - Network _Anomaly _Detection _System - Removed 0 rows with missing values
+2025-05-07 17:50:19,915 - INFO - Network _Anomaly _Detection _System - Training Random Forest
+2025-05-07 17:58:30,436 - INFO - Network _Anomaly _Detection _System - 
+RANDOM_FOREST Validation:
+2025-05-07 17:58:30,437 - INFO - Network _Anomaly _Detection _System - Accuracy: 0.9997 (MET)
+2025-05-07 17:58:30,437 - INFO - Network _Anomaly _Detection _System - Precision: 0.9999 (MET)
+2025-05-07 17:58:30,437 - INFO - Network _Anomaly _Detection _System - Recall: 0.9996 (MET)
+2025-05-07 17:58:30,438 - INFO - Network _Anomaly _Detection _System - Training Logistic Regression
+2025-05-07 17:58:51,710 - INFO - Network _Anomaly _Detection _System - Optimal threshold for logistic_regression: 0.74
+2025-05-07 17:58:51,731 - INFO - Network _Anomaly _Detection _System - 
+LOGISTIC_REGRESSION Validation:
+2025-05-07 17:58:51,731 - INFO - Network _Anomaly _Detection _System - Accuracy: 0.8820 (MET)
+2025-05-07 17:58:51,731 - INFO - Network _Anomaly _Detection _System - Precision: 0.9279 (MET)
+2025-05-07 17:58:51,731 - INFO - Network _Anomaly _Detection _System - Recall: 0.8558 (MET)
+2025-05-07 17:58:51,852 - INFO - Network _Anomaly _Detection _System - Models saved to anomaly_detector.joblib
+2025-05-07 17:58:54,669 - ERROR - Network _Anomaly _Detection _System - Dashboard was not created due to an earlier error.
+2025-05-07 18:04:49,969 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv
+2025-05-07 18:04:51,162 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv
+2025-05-07 18:04:52,826 - INFO - Network _Anomaly _Detection _System - Removed 0 rows with missing values
+2025-05-07 18:04:52,997 - INFO - Network _Anomaly _Detection _System - Training Random Forest
+2025-05-07 18:12:43,077 - INFO - Network _Anomaly _Detection _System - 
+RANDOM_FOREST Validation:
+2025-05-07 18:12:43,078 - INFO - Network _Anomaly _Detection _System - Accuracy: 0.9997 (MET)
+2025-05-07 18:12:43,078 - INFO - Network _Anomaly _Detection _System - Precision: 0.9999 (MET)
+2025-05-07 18:12:43,078 - INFO - Network _Anomaly _Detection _System - Recall: 0.9996 (MET)
+2025-05-07 18:12:43,078 - INFO - Network _Anomaly _Detection _System - Training Logistic Regression
+2025-05-07 18:13:01,914 - INFO - Network _Anomaly _Detection _System - Optimal threshold for logistic_regression: 0.74
+2025-05-07 18:13:01,929 - INFO - Network _Anomaly _Detection _System - 
+LOGISTIC_REGRESSION Validation:
+2025-05-07 18:13:01,929 - INFO - Network _Anomaly _Detection _System - Accuracy: 0.8820 (MET)
+2025-05-07 18:13:01,930 - INFO - Network _Anomaly _Detection _System - Precision: 0.9279 (MET)
+2025-05-07 18:13:01,930 - INFO - Network _Anomaly _Detection _System - Recall: 0.8558 (MET)
+2025-05-07 18:13:02,026 - INFO - Network _Anomaly _Detection _System - Models saved to anomaly_detector.joblib
+2025-05-07 18:13:04,228 - ERROR - Network _Anomaly _Detection _System - Dashboard was not created due to an earlier error.
+2025-05-07 18:17:25,223 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv
+2025-05-07 18:17:26,439 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv
+2025-05-07 18:17:28,132 - INFO - Network _Anomaly _Detection _System - Removed 0 rows with missing values
+2025-05-07 18:17:28,314 - INFO - Network _Anomaly _Detection _System - Training Random Forest
+2025-05-07 18:21:29,303 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv
+2025-05-07 18:21:30,589 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv
+2025-05-07 18:21:32,339 - INFO - Network _Anomaly _Detection _System - Removed 0 rows with missing values
+2025-05-07 18:21:32,525 - INFO - Network _Anomaly _Detection _System - Training Random Forest
+2025-05-07 18:22:27,970 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv
+2025-05-07 18:22:29,134 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv
+2025-05-07 18:22:30,814 - INFO - Network _Anomaly _Detection _System - Removed 0 rows with missing values
+2025-05-07 18:22:30,987 - INFO - Network _Anomaly _Detection _System - Training Random Forest
+2025-05-07 18:22:36,097 - ERROR - Network _Anomaly _Detection _System - Fatal error during execution: 
+All the 20 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+20 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 518, in fit
+    Xt, yt = self._fit(X, y, routed_params, raw_params=params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 440, in _fit
+    X, y, fitted_transformer = fit_resample_one_cached(
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\joblib\memory.py", line 326, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 1336, in _fit_resample_one
+    X_res, y_res = sampler.fit_resample(X, y, **params.get("fit_resample", {}))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\base.py", line 202, in fit_resample
+    return super().fit_resample(X, y, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\base.py", line 101, in fit_resample
+    self.sampling_strategy_ = check_sampling_strategy(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\utils\_validation.py", line 571, in check_sampling_strategy
+    _sampling_strategy_float(sampling_strategy, y, sampling_type).items()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\utils\_validation.py", line 410, in _sampling_strategy_float
+    raise ValueError(
+ValueError: The specified ratio required to remove samples from the minority class while trying to generate new samples. Please increase the ratio.
+Traceback (most recent call last):
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\Network _Anomaly _Detection _System.py", line 434, in <module>
+    detector.train()
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\Network _Anomaly _Detection _System.py", line 420, in train
+    ).fit(X_train, y_train).best_estimator_
+      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1024, in fit
+    self._run_search(evaluate_candidates)
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1571, in _run_search
+    evaluate_candidates(ParameterGrid(self.param_grid))
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1001, in evaluate_candidates
+    _warn_or_raise_about_fit_failures(out, self.error_score)
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 517, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 20 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+20 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 518, in fit
+    Xt, yt = self._fit(X, y, routed_params, raw_params=params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 440, in _fit
+    X, y, fitted_transformer = fit_resample_one_cached(
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\joblib\memory.py", line 326, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 1336, in _fit_resample_one
+    X_res, y_res = sampler.fit_resample(X, y, **params.get("fit_resample", {}))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\base.py", line 202, in fit_resample
+    return super().fit_resample(X, y, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\base.py", line 101, in fit_resample
+    self.sampling_strategy_ = check_sampling_strategy(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\utils\_validation.py", line 571, in check_sampling_strategy
+    _sampling_strategy_float(sampling_strategy, y, sampling_type).items()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\utils\_validation.py", line 410, in _sampling_strategy_float
+    raise ValueError(
+ValueError: The specified ratio required to remove samples from the minority class while trying to generate new samples. Please increase the ratio.
+
+2025-05-07 18:26:52,771 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv
+2025-05-07 18:26:53,920 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv
+2025-05-07 18:26:55,594 - INFO - Network _Anomaly _Detection _System - Removed 0 rows with missing values
+2025-05-07 18:26:55,765 - INFO - Network _Anomaly _Detection _System - Training Random Forest
+2025-05-07 18:27:00,480 - ERROR - Network _Anomaly _Detection _System - Fatal error during execution: 
+All the 20 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+20 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 518, in fit
+    Xt, yt = self._fit(X, y, routed_params, raw_params=params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 440, in _fit
+    X, y, fitted_transformer = fit_resample_one_cached(
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\joblib\memory.py", line 326, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 1336, in _fit_resample_one
+    X_res, y_res = sampler.fit_resample(X, y, **params.get("fit_resample", {}))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\base.py", line 202, in fit_resample
+    return super().fit_resample(X, y, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\base.py", line 101, in fit_resample
+    self.sampling_strategy_ = check_sampling_strategy(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\utils\_validation.py", line 571, in check_sampling_strategy
+    _sampling_strategy_float(sampling_strategy, y, sampling_type).items()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\utils\_validation.py", line 410, in _sampling_strategy_float
+    raise ValueError(
+ValueError: The specified ratio required to remove samples from the minority class while trying to generate new samples. Please increase the ratio.
+Traceback (most recent call last):
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\Network _Anomaly _Detection _System.py", line 434, in <module>
+    detector.train()
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\Network _Anomaly _Detection _System.py", line 420, in train
+    ).fit(X_train, y_train).best_estimator_
+      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1024, in fit
+    self._run_search(evaluate_candidates)
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1571, in _run_search
+    evaluate_candidates(ParameterGrid(self.param_grid))
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1001, in evaluate_candidates
+    _warn_or_raise_about_fit_failures(out, self.error_score)
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 517, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 20 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+20 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 518, in fit
+    Xt, yt = self._fit(X, y, routed_params, raw_params=params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 440, in _fit
+    X, y, fitted_transformer = fit_resample_one_cached(
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\joblib\memory.py", line 326, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\pipeline.py", line 1336, in _fit_resample_one
+    X_res, y_res = sampler.fit_resample(X, y, **params.get("fit_resample", {}))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\base.py", line 202, in fit_resample
+    return super().fit_resample(X, y, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\base.py", line 101, in fit_resample
+    self.sampling_strategy_ = check_sampling_strategy(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\utils\_validation.py", line 571, in check_sampling_strategy
+    _sampling_strategy_float(sampling_strategy, y, sampling_type).items()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\imblearn\utils\_validation.py", line 410, in _sampling_strategy_float
+    raise ValueError(
+ValueError: The specified ratio required to remove samples from the minority class while trying to generate new samples. Please increase the ratio.
+
+2025-05-07 18:27:21,317 - ERROR - Network _Anomaly _Detection _System - Fatal error during execution: 'NetworkAnomalyDetector' object has no attribute 'train'
+Traceback (most recent call last):
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\Network _Anomaly _Detection _System.py", line 433, in <module>
+    detector.train()
+    ^^^^^^^^^^^^^^
+AttributeError: 'NetworkAnomalyDetector' object has no attribute 'train'
+2025-05-07 18:27:27,653 - ERROR - Network _Anomaly _Detection _System - Fatal error during execution: 'NetworkAnomalyDetector' object has no attribute 'train'
+Traceback (most recent call last):
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\Network _Anomaly _Detection _System.py", line 433, in <module>
+    detector.train()
+    ^^^^^^^^^^^^^^
+AttributeError: 'NetworkAnomalyDetector' object has no attribute 'train'
+2025-05-07 18:29:14,911 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv
+2025-05-07 18:29:16,088 - INFO - Network _Anomaly _Detection _System - Loading dataset: data\Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv
+2025-05-07 18:29:17,742 - INFO - Network _Anomaly _Detection _System - Removed 0 rows with missing values
+2025-05-07 18:29:17,919 - INFO - Network _Anomaly _Detection _System - Training Random Forest
+2025-05-07 18:42:43,940 - INFO - Network _Anomaly _Detection _System - 
+RANDOM_FOREST Validation:
+2025-05-07 18:42:43,941 - INFO - Network _Anomaly _Detection _System - Accuracy: 0.9997 (MET)
+2025-05-07 18:42:43,941 - INFO - Network _Anomaly _Detection _System - Precision: 0.9999 (MET)
+2025-05-07 18:42:43,941 - INFO - Network _Anomaly _Detection _System - Recall: 0.9996 (MET)
+2025-05-07 18:42:43,941 - INFO - Network _Anomaly _Detection _System - Training Logistic Regression
+2025-05-07 18:45:48,236 - INFO - Network _Anomaly _Detection _System - Optimal threshold for logistic_regression: 0.90
+2025-05-07 18:45:48,251 - INFO - Network _Anomaly _Detection _System - 
+LOGISTIC_REGRESSION Validation:
+2025-05-07 18:45:48,251 - INFO - Network _Anomaly _Detection _System - Accuracy: 0.8673 (MET)
+2025-05-07 18:45:48,251 - INFO - Network _Anomaly _Detection _System - Precision: 0.9862 (MET)
+2025-05-07 18:45:48,251 - INFO - Network _Anomaly _Detection _System - Recall: 0.7739 (MET)
+2025-05-07 18:45:48,393 - INFO - Network _Anomaly _Detection _System - Models saved to anomaly_detector.joblib
+2025-05-07 18:45:56,234 - INFO - dash - Dash is running on http://0.0.0.0:8050/
+
+2025-05-07 18:45:56,267 - INFO - _internal - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8050
+ * Running on http://192.168.20.12:8050
+2025-05-07 18:45:56,268 - INFO - _internal - [33mPress CTRL+C to quit[0m
+2025-05-07 18:46:15,359 - INFO - _internal - 127.0.0.1 - - [07/May/2025 18:46:15] "GET / HTTP/1.1" 200 -
+2025-05-07 18:46:15,478 - INFO - _internal - 127.0.0.1 - - [07/May/2025 18:46:15] "GET /_dash-component-suites/dash_bootstrap_components/_components/dash_bootstrap_components.v2_0_2m1746599412.min.js HTTP/1.1" 200 -
+2025-05-07 18:46:16,216 - INFO - _internal - 127.0.0.1 - - [07/May/2025 18:46:16] "GET /_dash-layout HTTP/1.1" 200 -
+2025-05-07 18:46:16,217 - INFO - _internal - 127.0.0.1 - - [07/May/2025 18:46:16] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-05-07 18:46:16,396 - INFO - _internal - 127.0.0.1 - - [07/May/2025 18:46:16] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+2025-05-07 18:46:16,448 - INFO - _internal - 127.0.0.1 - - [07/May/2025 18:46:16] "GET /_dash-component-suites/dash/dcc/async-dropdown.js HTTP/1.1" 200 -
+2025-05-07 18:46:17,938 - INFO - _internal - 127.0.0.1 - - [07/May/2025 18:46:17] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+2025-05-07 18:46:20,483 - ERROR - app - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\dash\dash.py", line 1414, in dispatch
+    ctx.run(
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\dash\_callback.py", line 536, in add_context
+    raise err
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\dash\_callback.py", line 525, in add_context
+    output_value = _invoke_callback(func, *func_args, **func_kwargs)  # type: ignore[reportArgumentType]
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\dash\_callback.py", line 47, in _invoke_callback
+    return func(*args, **kwargs)  # %% callback invoked %%
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\Network _Anomaly _Detection _System.py", line 228, in update_visuals
+    shap_fig = self.get_shap_fig(selected_model, X_test)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\Network _Anomaly _Detection _System.py", line 260, in get_shap_fig
+    return px.bar(
+           ^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\plotly\express\_chart_types.py", line 381, in bar
+    return make_figure(
+           ^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\plotly\express\_core.py", line 2479, in make_figure
+    args = build_dataframe(args, constructor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\plotly\express\_core.py", line 1727, in build_dataframe
+    df_output, wide_id_vars = process_args_into_dataframe(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\plotly\express\_core.py", line 1373, in process_args_into_dataframe
+    raise ValueError(
+ValueError: All arguments should have the same length. The length of argument `y` is 21, whereas the length of previously-processed arguments ['x'] is 42
+2025-05-07 18:46:20,510 - INFO - _internal - 127.0.0.1 - - [07/May/2025 18:46:20] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+2025-05-07 18:46:24,742 - INFO - _internal - 127.0.0.1 - - [07/May/2025 18:46:24] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-05-07 18:49:02,509 - ERROR - app - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\dash\dash.py", line 1414, in dispatch
+    ctx.run(
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\dash\_callback.py", line 536, in add_context
+    raise err
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\dash\_callback.py", line 525, in add_context
+    output_value = _invoke_callback(func, *func_args, **func_kwargs)  # type: ignore[reportArgumentType]
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\dash\_callback.py", line 47, in _invoke_callback
+    return func(*args, **kwargs)  # %% callback invoked %%
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\Network _Anomaly _Detection _System.py", line 228, in update_visuals
+    shap_fig = self.get_shap_fig(selected_model, X_test)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\Network _Anomaly _Detection _System.py", line 260, in get_shap_fig
+    # --- Fix: Align lengths ---
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\plotly\express\_chart_types.py", line 381, in bar
+    return make_figure(
+           ^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\plotly\express\_core.py", line 2479, in make_figure
+    args = build_dataframe(args, constructor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\plotly\express\_core.py", line 1727, in build_dataframe
+    df_output, wide_id_vars = process_args_into_dataframe(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schew\OneDrive - Deakin University\Documents\GitHub\Network-Traffic-Analysis-Pipeline-v2.0\venv\Lib\site-packages\plotly\express\_core.py", line 1373, in process_args_into_dataframe
+    raise ValueError(
+ValueError: All arguments should have the same length. The length of argument `y` is 21, whereas the length of previously-processed arguments ['x'] is 42
+2025-05-07 18:49:02,533 - INFO - _internal - 127.0.0.1 - - [07/May/2025 18:49:02] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
