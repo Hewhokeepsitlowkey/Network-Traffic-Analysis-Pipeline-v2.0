@@ -42,14 +42,14 @@ Install with:
 ```bash
 pip install -r requirements.txt
 ```
-Dataset Requirements
-File Name	Description	Size
-Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv	DDoS attack patterns	2.1GB
-Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv	Port scanning activities	1.8GB
-Storage: Minimum 5GB free space
-Memory: 8GB RAM recommended
+##Dataset Requirements
+### File Name	Description	Size
+**Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv	DDoS attack patterns	2.1GB**
+**Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv	Port scanning activities	1.8GB**
+- Storage: Minimum 5GB free space
+- Memory: 8GB RAM recommended
 
-🛠️ Architecture
+##🛠️ Architecture
 ```bashgraph TD
     A[Raw Data] --> B{Data Validation}
     B --> C[Data Cleaning]
@@ -60,30 +60,31 @@ Memory: 8GB RAM recommended
     G --> H[Dashboard Visualization]
 ```
 
-🏃 Getting Started
-1. Data Preparation
+##🏃 Getting Started
+### 1. Data Preparation
 ```bash
 mkdir -p datasets/raw
 # Place CSV files in datasets/raw directory
 ```
-2. Run Detection System
+### 2. Run Detection System
 ```bash
 python Network_Anomaly_Detection_System.py \
   --data-path datasets/raw \
   --model-path models \
   --log-level INFO
 ```
-3. Access Dashboard
+### 3. Access Dashboard
 ```bash
 http://localhost:8050
 ```
-📊 Dashboard Features
-Panel	Visualization	Description
+##📊 Dashboard Features
+**Panel	Visualization	Description**
 1	Model Metrics	Accuracy, Precision, Recall comparisons
 2	SHAP Summary	Feature impact analysis
 3	Traffic Flow	Real-time packet visualization
 4	Alert Feed	Live anomaly notifications
-🔧 Configuration
+
+##🔧 Configuration
 Core Parameters
 ```python
 # Network_Anomaly_Detection_System.py
@@ -124,7 +125,7 @@ args=('network_anomaly.log', 'a')
 format=%(asctime)s - %(name)s - %(levelname)s - %(message)s
 datefmt=%Y-%m-%d %H:%M:%S
 ```
-📂 Project Structure
+##📂 Project Structure
 ```
 .
 ├── Network_Anomaly_Detection_System.py  # Main application
@@ -138,7 +139,7 @@ datefmt=%Y-%m-%d %H:%M:%S
 ├── requirements.txt                     # Dependencies
 └── network_anomaly.log                  # System logs
 ```
-🌐 Deployment
+##🌐 Deployment
 Production Setup
 ```bash
 gunicorn dash_app:server \
@@ -158,10 +159,10 @@ RUN pip install -r requirements.txt
 EXPOSE 8050
 CMD ["python", "Network_Anomaly_Detection_System.py"]
 ```
-📜 License
+##📜 License
 MIT License - See LICENSE for full text
 
-📚 References
+##📚 References
 CICIDS2017 Dataset: https://www.unb.ca/cic/datasets/ids-2017.html
 
 SHAP Documentation: https://shap.readthedocs.io
