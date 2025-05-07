@@ -44,8 +44,8 @@ pip install -r requirements.txt
 ```
 ## Dataset Requirements
 ### File Name	Description	Size
-**Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv	DDoS attack patterns	2.1GB**
-**Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv	Port scanning activities	1.8GB**
+- **Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv	DDoS attack patterns	2.1GB**
+- **Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv	Port scanning activities	1.8GB**
 - Storage: Minimum 5GB free space
 - Memory: 8GB RAM recommended
 
@@ -77,7 +77,7 @@ python Network_Anomaly_Detection_System.py \
 ```bash
 http://localhost:8050
 ```
-##📊 Dashboard Features
+## 📊 Dashboard Features
 **Panel	Visualization	Description**
 1	Model Metrics	Accuracy, Precision, Recall comparisons
 2	SHAP Summary	Feature impact analysis
@@ -171,5 +171,5 @@ Plotly Dash: https://dash.plotly.com
 
 
 
-This `README.md` provides a professional and comprehensive overview of the system, including its purpose, features, usage, and configuration. Let me know if you need further adjustments!
+This `README.md` provides a professional and comprehensive overview of the system, including its purpose, features, usage, and configuration. 
 ```
