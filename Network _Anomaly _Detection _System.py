@@ -37,8 +37,8 @@ warnings.filterwarnings("ignore", category=UserWarning)
 
 # Project-compliant constants
 DATA_PATHS = {
-    "ddos": "Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
-    "portscan": "Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+    "ddos": r"data\Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+    "portscan": r"data\Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
 }
 
 CORE_FEATURES = [
