@@ -19,8 +19,6 @@ from sklearn.compose import ColumnTransformer
 from imblearn.over_sampling import SMOTE
 from imblearn.pipeline import make_pipeline as make_imb_pipeline
 import joblib
-import dash
-import dash_bootstrap_components as dbc
 
 # Configure logging for debugging and monitoring
 logging.basicConfig(
@@ -96,7 +94,7 @@ class NetworkAnomalyDetector:
         # Interaction features
         df['fwd_len_times_bwd_len'] = df['total_length_of_fwd_packets'] * df['total_length_of_bwd_packets']
         df['fwd_packets_times_bwd_packets'] = df['total_fwd_packets'] * df['total_backward_packets']
-        # Replace any inf/-inf with nan, then fill nan with 0 (optional, or use your cleaning pipeline)
+        # # Handle inf/-inf as NaN, then fill missing values with 0 (or use cleaning pipeline)
         df = df.replace([np.inf, -np.inf], np.nan).fillna(0)
         return df
 
@@ -352,6 +350,10 @@ class NetworkAnomalyDetector:
         df = self._handle_infinite_values(df)
         df = self._drop_missing_values(df)
         self._validate_data_length(df)
+        # Remove duplicates based on core features
+        df = df.drop_duplicates(subset=Config.CORE_FEATURES)
+        # Filter out classes with <= 100 samples
+        df = df.groupby('label').filter(lambda x: len(x) > 100)
         return df
 
     def _encode_labels(self, labels: pd.Series) -> pd.Series:
