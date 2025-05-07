@@ -1,6 +1,5 @@
 # Enterprise-Grade Network Anomaly Detection System v4.0
 
-![Anomaly Detection Dashboard](https://via.placeholder.com/800x400.png?text=Anomaly+Detection+Dashboard+Preview)
 
 ## 📖 Overview
 A production-ready ML solution for detecting network anomalies (DDoS, Port Scans) with explainable AI capabilities. Combines robust machine learning models with interactive visualizations for enterprise security operations.
